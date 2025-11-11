@@ -1,5 +1,6 @@
 'use client'
 
+import Image from 'next/image'
 import { useState, useEffect } from 'react'
 import { usePathname } from 'next/navigation'
 
@@ -85,11 +86,14 @@ export default function Header() {
           {/* Logo */}
           <div className="flex-shrink-0">
             <a href={logoHref} className="flex items-center">
-                    <img
-                      src="/images/CSCLOGO.png"
-                      alt="Circular Shipping Company"
-                      className="h-12 md:h-14 w-auto brightness-0 invert"
-                    />
+              <Image
+                src="/images/CSCLOGO.png"
+                alt="Circular Shipping Company"
+                width={160}
+                height={60}
+                className="h-12 md:h-14 w-auto brightness-0 invert"
+                priority
+              />
             </a>
           </div>
 

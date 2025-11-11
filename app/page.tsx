@@ -1,5 +1,6 @@
 'use client'
 
+import Image from 'next/image'
 import { useState } from 'react'
 
 export default function Home() {
@@ -16,10 +17,13 @@ export default function Home() {
               <div className="max-w-[85rem] mx-auto px-4 sm:px-6 lg:px-8 pt-40 sm:pt-52 pb-20 lg:pb-32 space-y-8 sm:space-y-10 min-h-[620px] sm:min-h-[720px]">
                 {/* Hero Image */}
                 <div className="absolute inset-0 flex justify-center items-center pointer-events-none z-0">
-                  <img 
+                  <Image 
                     src="/images/Hero.png" 
                     alt="Hero" 
-                    className="w-full h-full object-cover object-[center_40%] sm:object-center scale-x-[-1] opacity-100"
+                    fill
+                    priority
+                    sizes="100vw"
+                    className="object-cover object-[center_40%] sm:object-center scale-x-[-1] opacity-100"
                   />
                   {/* Dark overlay */}
                   <div className="absolute inset-0 bg-black/30"></div>
@@ -148,11 +152,17 @@ export default function Home() {
         <div className="relative w-full py-12 sm:py-16 md:py-24 min-h-[350px] sm:min-h-[400px] md:min-h-[500px] bg-circular-dark-green flex items-center justify-center overflow-hidden">
           <div className="absolute inset-0 bg-gradient-to-tl from-transparent via-transparent to-black/10"></div>
           <div className="absolute inset-0 pointer-events-none select-none overflow-hidden">
-            <img
-              src="/images/Icoon.png"
-              alt=""
-              className="absolute -top-4 -right-32 w-[70%] max-w-none opacity-20"
-            />
+            <div className="relative h-full w-full">
+              <Image
+                src="/images/Icoon.png"
+                alt="Decoratief icoon"
+                fill
+                sizes="100vw"
+                className="object-contain opacity-20"
+                style={{ transform: 'translate(20%, -10%)' }}
+                priority
+              />
+            </div>
           </div>
 
           {/* Content - Centered */}

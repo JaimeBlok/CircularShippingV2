@@ -1,5 +1,6 @@
 'use client'
 
+import Image from 'next/image'
 import { useState } from 'react'
 
 export default function Business() {
@@ -36,7 +37,13 @@ export default function Business() {
           {/* Stat Block 1 - Opvouwbaar */}
           <div className="bg-gradient-to-br from-gray-50 to-white rounded-3xl p-6 sm:p-8 lg:p-10 flex flex-col min-h-[220px] md:min-h-[260px] relative overflow-hidden">
             <div className="absolute top-6 right-6 w-12 h-12">
-              <img src="/images/Foldable.jpeg" alt="Opvouwbaar icoon" className="w-full h-full object-contain mix-blend-multiply" />
+              <Image
+                src="/images/Foldable.jpeg"
+                alt="Opvouwbaar icoon"
+                width={96}
+                height={96}
+                className="w-full h-full object-contain mix-blend-multiply"
+              />
             </div>
             <div className="text-3xl font-medium text-gray-900 mb-2">Opvouwbaar</div>
             <div className="text-gray-600 mb-4">Makkelijk in te leveren. Houd emissies laag bij retour.</div>
@@ -56,7 +63,13 @@ export default function Business() {
           {/* Stat Block 3 - Herbruikbaar */}
           <div className="bg-gradient-to-br from-circular-teal to-circular-green rounded-3xl p-6 sm:p-8 lg:p-10 flex flex-col min-h-[260px] md:min-h-[360px] text-white relative overflow-hidden">
             <div className="absolute top-6 right-6 w-12 h-12 rounded-full bg-circular-green flex items-center justify-center">
-              <img src="/images/Recyclable.png" alt="Herbruikbaar icoon" className="w-7 h-7 object-contain brightness-0 invert" />
+              <Image
+                src="/images/Recyclable.png"
+                alt="Herbruikbaar icoon"
+                width={28}
+                height={28}
+                className="w-7 h-7 object-contain brightness-0 invert"
+              />
             </div>
             <div className="text-3xl font-medium mb-2">Herbruikbaar</div>
             <div className="text-white/90 mb-4">Gemaakt van gerecycled plastic bespaart 80% CO₂. Minder dan 6 hergebruiken om break-even te bereiken (CO₂).</div>
@@ -254,7 +267,7 @@ export default function Business() {
                           {/* Slide 1 */}
                           <div className="flex-shrink-0 px-4 w-full">
                             <h4 className="text-xl sm:text-2xl lg:text-3xl font-medium mb-6 sm:mb-10 text-gray-900">
-                              "Circular Shipping heeft ons verzendproces getransformeerd. Efficiënt, duurzame technologie, uitstekende service!"
+                              &ldquo;Circular Shipping heeft ons verzendproces getransformeerd. Efficiënt, duurzame technologie, uitstekende service!&rdquo;
                             </h4>
                             <span className="block text-lg sm:text-xl font-medium text-gray-900">Jenny Wilson</span>
                             <span className="block text-base sm:text-lg text-gray-700">Logistiek Manager</span>
@@ -263,7 +276,7 @@ export default function Business() {
                           {/* Slide 2 */}
                           <div className="flex-shrink-0 px-4 w-full">
                             <h4 className="text-xl sm:text-2xl lg:text-3xl font-medium mb-6 sm:mb-10 text-gray-900">
-                              "Circular Shipping heeft ons energieverbruik gerevolutioneerd. Milieuvriendelijke technologie, uitzonderlijke service!"
+                              &ldquo;Circular Shipping heeft ons energieverbruik gerevolutioneerd. Milieuvriendelijke technologie, uitzonderlijke service!&rdquo;
                             </h4>
                             <span className="block text-lg sm:text-xl font-medium text-gray-900">Mary Jane</span>
                             <span className="block text-base sm:text-lg text-gray-700">Operations Director</span>
@@ -272,7 +285,7 @@ export default function Business() {
                           {/* Slide 3 */}
                           <div className="flex-shrink-0 px-4 w-full">
                             <h4 className="text-xl sm:text-2xl lg:text-3xl font-medium mb-6 sm:mb-10 text-gray-900">
-                              "Circular Shipping heeft onze verzendgewoonten volledig veranderd. Moderne, milieubewuste oplossingen, toondersteuning!"
+                              &ldquo;Circular Shipping heeft onze verzendgewoonten volledig veranderd. Moderne, milieubewuste oplossingen, toondersteuning!&rdquo;
                             </h4>
                             <span className="block text-lg sm:text-xl font-medium text-gray-900">Anastasia Relo</span>
                             <span className="block text-base sm:text-lg text-gray-700">Supply Chain Manager</span>

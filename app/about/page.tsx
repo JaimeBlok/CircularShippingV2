@@ -1,6 +1,6 @@
 'use client'
 
-import { useState } from 'react'
+import Image from 'next/image'
 
 export default function About() {
   const teamMembers = [
@@ -29,10 +29,13 @@ export default function About() {
       {/* Hero Section */}
       <section className="relative z-0 h-[360px] sm:h-[480px] overflow-hidden">
         <div className="absolute inset-0">
-          <img 
+          <Image 
             src="/images/Missie.jpg" 
             alt="Circular Shipping missie"
-            className="w-full h-full object-cover object-[center_70%] blur-sm"
+            fill
+            priority
+            sizes="100vw"
+            className="object-cover object-[center_70%] blur-sm"
           />
         </div>
         <div className="absolute inset-0 bg-gradient-to-b from-transparent via-black/40 to-black/60"></div>
@@ -91,11 +94,14 @@ export default function About() {
 
           {/* Image below */}
           <div>
-            <div className="relative overflow-hidden rounded-3xl shadow-xl">
-              <img
+            <div className="relative overflow-hidden rounded-3xl shadow-xl h-[300px] sm:h-[400px]">
+              <Image
                 src="/images/Delft.jpg"
                 alt="TU Delft studenten"
-                className="w-full h-[300px] sm:h-[400px] object-cover"
+                fill
+                sizes="(max-width: 640px) 100vw, (max-width: 1024px) 80vw, 60vw"
+                className="object-cover"
+                priority
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
               <div className="absolute bottom-0 right-0 p-6 sm:p-8 text-right">
@@ -122,11 +128,13 @@ export default function About() {
           <div className="mt-12 grid gap-6 sm:gap-8 sm:grid-cols-2 lg:grid-cols-3">
             {teamMembers.map(member => (
               <div key={member.name} className="group bg-white rounded-3xl shadow-md overflow-hidden border border-gray-100">
-                <div className="h-72 sm:h-80 overflow-hidden">
-                  <img
+                <div className="h-72 sm:h-80 overflow-hidden relative">
+                  <Image
                     src={member.image}
                     alt={`${member.name} - ${member.role}`}
-                    className="w-full h-full object-cover transition duration-300 group-hover:scale-105"
+                    fill
+                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                    className="object-cover transition duration-300 group-hover:scale-105"
                   />
                 </div>
                 <div className="p-6 space-y-3">
