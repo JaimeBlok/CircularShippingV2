@@ -55,7 +55,7 @@ export default function About() {
           {/* Title */}
           <div className="mb-12">
             <h2 className="text-5xl sm:text-5xl md:text-5xl lg:text-6xl font-medium text-circular-dark tracking-tight">
-              Van frustratie<br className="hidden sm:block" />naar <span className="text-circular-green">circulaire oplossing</span>
+              Van frustratie<br className="hidden sm:block" />naar <span className="text-circular-green">een circulaire oplossing</span>
             </h2>
           </div>
 
