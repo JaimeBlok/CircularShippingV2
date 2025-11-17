@@ -75,18 +75,22 @@ export default function Home() {
         {/* Facts Block */}
         <div className="max-w-5xl mx-auto mb-8 sm:mb-10 lg:mb-12">
           <div className="bg-gradient-to-br from-circular-dark-green to-circular-green rounded-2xl sm:rounded-3xl p-6 sm:p-8 md:p-10 text-white">
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8">
-              <div className="text-center md:text-left">
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6">
+              <div className="text-center">
                 <div className="text-3xl sm:text-4xl font-medium mb-2">Tot 90%</div>
                 <div className="text-sm sm:text-base text-white/90">CO₂ besparing t.o.v. karton</div>
               </div>
-              <div className="text-center md:text-left">
+              <div className="text-center">
                 <div className="text-3xl sm:text-4xl font-medium mb-2">80x</div>
                 <div className="text-sm sm:text-base text-white/90">Herbruikbaar (verzendzak)</div>
               </div>
-              <div className="text-center md:text-left">
-                <div className="text-3xl sm:text-4xl font-medium mb-2">100%</div>
-                <div className="text-sm sm:text-base text-white/90">Circulair gerecycled</div>
+              <div className="text-center">
+                <div className="text-3xl sm:text-4xl font-medium mb-2">Meer</div>
+                <div className="text-sm sm:text-base text-white/90">bescherming</div>
+              </div>
+              <div className="text-center">
+                <div className="text-3xl sm:text-4xl font-medium mb-2">Snel</div>
+                <div className="text-sm sm:text-base text-white/90">in te pakken</div>
               </div>
             </div>
             <div className="mt-6 sm:mt-8 pt-6 sm:pt-8 border-t border-white/20">
