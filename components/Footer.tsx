@@ -5,11 +5,24 @@ export default function Footer() {
     <footer className="mt-auto bg-white w-full">
       <div className="mt-auto w-full max-w-[85rem] py-10 px-4 sm:px-6 lg:px-8 lg:pt-20 mx-auto">
         {/* Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6">
           <div className="col-span-1 sm:col-span-2 lg:col-span-1">
             <a className="flex-none text-xl font-medium focus:outline-hidden focus:opacity-80" href="/" aria-label="Circular Shipping Company">
               <Image src="/images/CSCLOGO.png" alt="Circular Shipping Company" width={160} height={60} className="h-12 w-auto" />
             </a>
+          </div>
+          {/* End Col */}
+
+          <div className="col-span-1">
+            <h4 className="font-medium text-gray-900">Navigatie</h4>
+            <div className="mt-3 grid space-y-2 text-sm text-gray-600">
+              <a href="/" className="hover:text-circular-dark-green transition-colors">Home</a>
+              <a href="/about" className="hover:text-circular-dark-green transition-colors">Over ons</a>
+              <a href="/business" className="hover:text-circular-dark-green transition-colors">Zakelijk</a>
+              <a href="/demo" className="hover:text-circular-dark-green transition-colors">Inleverpunten</a>
+              <a href="/#contact" className="hover:text-circular-dark-green transition-colors">Contact</a>
+              <a href="/#faq" className="hover:text-circular-dark-green transition-colors">FAQ</a>
+            </div>
           </div>
           {/* End Col */}
 
