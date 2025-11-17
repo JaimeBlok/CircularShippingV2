@@ -49,7 +49,7 @@ export default function Home() {
                 {/* Buttons */}
                 <div className="text-left relative z-10">
                   <div className="flex flex-row flex-wrap items-center gap-3 sm:gap-4">
-                    <a className="inline-flex items-center justify-center py-3 px-5 text-base font-medium text-white bg-circular-green hover:bg-opacity-90 border border-transparent rounded-full transition duration-200" href="#about">
+                    <a className="inline-flex items-center justify-center py-3 px-5 text-base font-medium text-white bg-circular-green hover:bg-opacity-90 border border-transparent rounded-full transition duration-200" href="/about">
                       Onze missie
                       <svg className="shrink-0 size-4 ml-2" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="m9 18 6-6-6-6"/></svg>
                     </a>
