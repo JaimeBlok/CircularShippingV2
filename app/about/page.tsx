@@ -134,15 +134,15 @@ export default function About() {
                     alt={`${member.name} - ${member.role}`}
                     fill
                     sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                    className="object-contain transition duration-300 group-hover:scale-105"
+                    className="object-cover transition duration-300 group-hover:scale-105"
                   />
                 </div>
-                <div className="p-6 space-y-3">
+                <div className="p-4 sm:p-5 space-y-2 sm:space-y-3">
                   <div>
-                    <p className="text-lg font-medium text-circular-dark">{member.name}</p>
-                    <p className="text-sm text-gray-600 mt-1">{member.role}</p>
+                    <p className="text-base sm:text-lg font-medium text-circular-dark">{member.name}</p>
+                    <p className="text-xs sm:text-sm text-gray-600 mt-1">{member.role}</p>
                   </div>
-                  <p className="text-sm text-gray-700 leading-relaxed">{member.description}</p>
+                  <p className="text-xs sm:text-sm text-gray-700 leading-relaxed">{member.description}</p>
                 </div>
               </div>
             ))}
