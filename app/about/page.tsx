@@ -128,13 +128,13 @@ export default function About() {
           <div className="mt-12 grid gap-6 sm:gap-8 sm:grid-cols-2 lg:grid-cols-3">
             {teamMembers.map(member => (
               <div key={member.name} className="group bg-white rounded-3xl shadow-md overflow-hidden border border-gray-100">
-                <div className="h-72 sm:h-80 overflow-hidden relative">
+                <div className="h-72 sm:h-80 overflow-hidden relative bg-gray-100">
                   <Image
                     src={member.image}
                     alt={`${member.name} - ${member.role}`}
                     fill
                     sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                    className="object-cover transition duration-300 group-hover:scale-105"
+                    className="object-contain transition duration-300 group-hover:scale-105"
                   />
                 </div>
                 <div className="p-6 space-y-3">
