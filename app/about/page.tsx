@@ -6,14 +6,14 @@ export default function About() {
   const teamMembers = [
     {
       name: 'Joost',
-      role: 'Co-founder & CTO',
-      description: 'Als technisch specialist focust Joost zich op het ontwikkelen van innovatieve verpakkingsoplossingen.',
+      role: 'Co-founder & CEO',
+      description: 'Joost leidt de strategische visie van het bedrijf en bouwt partnerships met webshops en logistieke partners.',
       image: '/images/joost2.jpg',
     },
     {
       name: 'Boris',
-      role: 'Co-founder & CEO',
-      description: 'Boris leidt de strategische visie van het bedrijf en bouwt partnerships met webshops en logistieke partners.',
+      role: 'Co-founder & CTO',
+      description: 'Als technisch specialist focust Boris zich op het ontwikkelen van innovatieve verpakkingsoplossingen.',
       image: '/images/Boris.jpg',
     },
     {
@@ -150,172 +150,6 @@ export default function About() {
         </div>
       </section>
 
-      {/* Careers Section */}
-      <div className="pb-12 pt-12 lg:pb-24 lg:pt-24 relative overflow-hidden bg-gray-50">
-        <div className="max-w-[85rem] mx-auto px-4 sm:px-6 lg:px-8 relative">
-          <div className="text-center mb-12 sm:mb-16 md:mb-20 lg:mb-32">
-            <h2 className="text-5xl sm:text-5xl md:text-5xl lg:text-6xl font-medium tracking-tight mb-4 sm:mb-6 text-circular-dark">
-              Word onderdeel van ons team
-            </h2>
-            <p className="text-base sm:text-lg text-gray-700">
-              Onze filosofie is simpel – maak de wereld een groenere plek.
-            </p>
-          </div>
-
-          <div className="max-w-4xl mx-auto">
-            {/* Research and Development */}
-            <div className="mb-12 sm:mb-16">
-              <span className="block font-medium text-gray-600 mb-6">Onderzoek & Ontwikkeling (O&O)</span>
-
-              {/* Job Card 1 */}
-              <div className="py-6 px-6 sm:px-8 mb-4 bg-white rounded-2xl shadow-md">
-                <div className="flex flex-col sm:flex-row md:justify-between items-start">
-                  <div className="mb-6 sm:mb-0">
-                    <h4 className="text-lg sm:text-xl font-medium mb-3 text-gray-900">Duurzame Verpakkingen Onderzoeker</h4>
-                    <div className="flex flex-wrap gap-4">
-                      <div className="inline-flex items-center">
-                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path d="M16.75 8.5C16.75 13.75 10 18.25 10 18.25C10 18.25 3.25 13.75 3.25 8.5C3.25 6.70979 3.96116 4.9929 5.22703 3.72703C6.4929 2.46116 8.20979 1.75 10 1.75C11.7902 1.75 13.5071 2.46116 14.773 3.72703C16.0388 4.9929 16.75 6.70979 16.75 8.5Z" stroke="#646A69" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
-                          <path d="M10 10.75C11.2426 10.75 12.25 9.74264 12.25 8.5C12.25 7.25736 11.2426 6.25 10 6.25C8.75736 6.25 7.75 7.25736 7.75 8.5C7.75 9.74264 8.75736 10.75 10 10.75Z" stroke="#646A69" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
-                        </svg>
-                        <span className="ml-2 font-medium text-gray-900">Rotterdam, NL</span>
-                      </div>
-                      <div className="inline-flex items-center">
-                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path d="M10 17.5C14.1421 17.5 17.5 14.1421 17.5 10C17.5 5.85786 14.1421 2.5 10 2.5C5.85786 2.5 2.5 5.85786 2.5 10C2.5 14.1421 5.85786 17.5 10 17.5Z" stroke="#646A69" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
-                          <path d="M10 5.5V10L13 11.5" stroke="#646A69" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
-                        </svg>
-                        <span className="ml-2 font-medium text-gray-900">Fulltime</span>
-                      </div>
-                    </div>
-                  </div>
-                  <a href="mailto:info@circularshipping.nl?subject=Sollicitatie%20Duurzame%20Verpakkingen%20Onderzoeker" className="inline-flex py-2.5 px-4 items-center justify-center text-sm font-medium text-circular-dark-green hover:text-white border border-circular-dark-green hover:bg-circular-dark-green rounded-full transition duration-200">
-                    Solliciteren
-                  </a>
-                </div>
-              </div>
-
-              {/* Job Card 2 */}
-              <div className="py-6 px-6 sm:px-8 bg-white rounded-2xl shadow-md">
-                <div className="flex flex-col sm:flex-row md:justify-between items-start">
-                  <div className="mb-6 sm:mb-0">
-                    <h4 className="text-lg sm:text-xl font-medium mb-3 text-gray-900">Materiaalwetenschapper</h4>
-                    <div className="flex flex-wrap gap-4">
-                      <div className="inline-flex items-center">
-                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path d="M16.75 8.5C16.75 13.75 10 18.25 10 18.25C10 18.25 3.25 13.75 3.25 8.5C3.25 6.70979 3.96116 4.9929 5.22703 3.72703C6.4929 2.46116 8.20979 1.75 10 1.75C11.7902 1.75 13.5071 2.46116 14.773 3.72703C16.0388 4.9929 16.75 6.70979 16.75 8.5Z" stroke="#646A69" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
-                          <path d="M10 10.75C11.2426 10.75 12.25 9.74264 12.25 8.5C12.25 7.25736 11.2426 6.25 10 6.25C8.75736 6.25 7.75 7.25736 7.75 8.5C7.75 9.74264 8.75736 10.75 10 10.75Z" stroke="#646A69" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
-                        </svg>
-                        <span className="ml-2 font-medium text-gray-900">Rotterdam, NL</span>
-                      </div>
-                      <div className="inline-flex items-center">
-                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path d="M10 17.5C14.1421 17.5 17.5 14.1421 17.5 10C17.5 5.85786 14.1421 2.5 10 2.5C5.85786 2.5 2.5 5.85786 2.5 10C2.5 14.1421 5.85786 17.5 10 17.5Z" stroke="#646A69" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
-                          <path d="M10 5.5V10L13 11.5" stroke="#646A69" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
-                        </svg>
-                        <span className="ml-2 font-medium text-gray-900">Fulltime</span>
-                      </div>
-                    </div>
-                  </div>
-                  <a href="mailto:info@circularshipping.nl?subject=Sollicitatie%20Materiaalwetenschapper" className="inline-flex py-2.5 px-4 items-center justify-center text-sm font-medium text-circular-dark-green hover:text-white border border-circular-dark-green hover:bg-circular-dark-green rounded-full transition duration-200">
-                    Solliciteren
-                  </a>
-                </div>
-              </div>
-            </div>
-
-            {/* Engineering */}
-            <div>
-              <span className="block font-medium text-gray-600 mb-6">Techniek</span>
-
-              {/* Job Card 1 */}
-              <div className="py-6 px-6 sm:px-8 mb-4 bg-white rounded-2xl shadow-md">
-                <div className="flex flex-col sm:flex-row md:justify-between items-start">
-                  <div className="mb-6 sm:mb-0">
-                    <h4 className="text-lg sm:text-xl font-medium mb-3 text-gray-900">Duurzame Verzending Ingenieur</h4>
-                    <div className="flex flex-wrap gap-4">
-                      <div className="inline-flex items-center">
-                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path d="M16.75 8.5C16.75 13.75 10 18.25 10 18.25C10 18.25 3.25 13.75 3.25 8.5C3.25 6.70979 3.96116 4.9929 5.22703 3.72703C6.4929 2.46116 8.20979 1.75 10 1.75C11.7902 1.75 13.5071 2.46116 14.773 3.72703C16.0388 4.9929 16.75 6.70979 16.75 8.5Z" stroke="#646A69" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
-                          <path d="M10 10.75C11.2426 10.75 12.25 9.74264 12.25 8.5C12.25 7.25736 11.2426 6.25 10 6.25C8.75736 6.25 7.75 7.25736 7.75 8.5C7.75 9.74264 8.75736 10.75 10 10.75Z" stroke="#646A69" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
-                        </svg>
-                        <span className="ml-2 font-medium text-gray-900">Rotterdam, NL</span>
-                      </div>
-                      <div className="inline-flex items-center">
-                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path d="M10 17.5C14.1421 17.5 17.5 14.1421 17.5 10C17.5 5.85786 14.1421 2.5 10 2.5C5.85786 2.5 2.5 5.85786 2.5 10C2.5 14.1421 5.85786 17.5 10 17.5Z" stroke="#646A69" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
-                          <path d="M10 5.5V10L13 11.5" stroke="#646A69" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
-                        </svg>
-                        <span className="ml-2 font-medium text-gray-900">Fulltime</span>
-                      </div>
-                    </div>
-                  </div>
-                  <a href="mailto:info@circularshipping.nl?subject=Sollicitatie%20Duurzame%20Verzending%20Ingenieur" className="inline-flex py-2.5 px-4 items-center justify-center text-sm font-medium text-circular-dark-green hover:text-white border border-circular-dark-green hover:bg-circular-dark-green rounded-full transition duration-200">
-                    Solliciteren
-                  </a>
-                </div>
-              </div>
-
-              {/* Job Card 2 */}
-              <div className="py-6 px-6 sm:px-8 mb-4 bg-white rounded-2xl shadow-md">
-                <div className="flex flex-col sm:flex-row md:justify-between items-start">
-                  <div className="mb-6 sm:mb-0">
-                    <h4 className="text-lg sm:text-xl font-medium mb-3 text-gray-900">Logistiek Ingenieur</h4>
-                    <div className="flex flex-wrap gap-4">
-                      <div className="inline-flex items-center">
-                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path d="M16.75 8.5C16.75 13.75 10 18.25 10 18.25C10 18.25 3.25 13.75 3.25 8.5C3.25 6.70979 3.96116 4.9929 5.22703 3.72703C6.4929 2.46116 8.20979 1.75 10 1.75C11.7902 1.75 13.5071 2.46116 14.773 3.72703C16.0388 4.9929 16.75 6.70979 16.75 8.5Z" stroke="#646A69" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
-                          <path d="M10 10.75C11.2426 10.75 12.25 9.74264 12.25 8.5C12.25 7.25736 11.2426 6.25 10 6.25C8.75736 6.25 7.75 7.25736 7.75 8.5C7.75 9.74264 8.75736 10.75 10 10.75Z" stroke="#646A69" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
-                        </svg>
-                        <span className="ml-2 font-medium text-gray-900">Rotterdam, NL</span>
-                      </div>
-                      <div className="inline-flex items-center">
-                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path d="M10 17.5C14.1421 17.5 17.5 14.1421 17.5 10C17.5 5.85786 14.1421 2.5 10 2.5C5.85786 2.5 2.5 5.85786 2.5 10C2.5 14.1421 5.85786 17.5 10 17.5Z" stroke="#646A69" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
-                          <path d="M10 5.5V10L13 11.5" stroke="#646A69" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
-                        </svg>
-                        <span className="ml-2 font-medium text-gray-900">Fulltime</span>
-                      </div>
-                    </div>
-                  </div>
-                  <a href="mailto:info@circularshipping.nl?subject=Sollicitatie%20Logistiek%20Ingenieur" className="inline-flex py-2.5 px-4 items-center justify-center text-sm font-medium text-circular-dark-green hover:text-white border border-circular-dark-green hover:bg-circular-dark-green rounded-full transition duration-200">
-                    Solliciteren
-                  </a>
-                </div>
-              </div>
-
-              {/* Job Card 3 */}
-              <div className="py-6 px-6 sm:px-8 bg-white rounded-2xl shadow-md">
-                <div className="flex flex-col sm:flex-row md:justify-between items-start">
-                  <div className="mb-6 sm:mb-0">
-                    <h4 className="text-lg sm:text-xl font-medium mb-3 text-gray-900">Circulaire Economie Specialist</h4>
-                    <div className="flex flex-wrap gap-4">
-                      <div className="inline-flex items-center">
-                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path d="M16.75 8.5C16.75 13.75 10 18.25 10 18.25C10 18.25 3.25 13.75 3.25 8.5C3.25 6.70979 3.96116 4.9929 5.22703 3.72703C6.4929 2.46116 8.20979 1.75 10 1.75C11.7902 1.75 13.5071 2.46116 14.773 3.72703C16.0388 4.9929 16.75 6.70979 16.75 8.5Z" stroke="#646A69" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
-                          <path d="M10 10.75C11.2426 10.75 12.25 9.74264 12.25 8.5C12.25 7.25736 11.2426 6.25 10 6.25C8.75736 6.25 7.75 7.25736 7.75 8.5C7.75 9.74264 8.75736 10.75 10 10.75Z" stroke="#646A69" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
-                        </svg>
-                        <span className="ml-2 font-medium text-gray-900">Rotterdam, NL</span>
-                      </div>
-                      <div className="inline-flex items-center">
-                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path d="M10 17.5C14.1421 17.5 17.5 14.1421 17.5 10C17.5 5.85786 14.1421 2.5 10 2.5C5.85786 2.5 2.5 5.85786 2.5 10C2.5 14.1421 5.85786 17.5 10 17.5Z" stroke="#646A69" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
-                          <path d="M10 5.5V10L13 11.5" stroke="#646A69" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
-                        </svg>
-                        <span className="ml-2 font-medium text-gray-900">Fulltime</span>
-                      </div>
-                    </div>
-                  </div>
-                  <a href="mailto:info@circularshipping.nl?subject=Sollicitatie%20Circulaire%20Economie%20Specialist" className="inline-flex py-2.5 px-4 items-center justify-center text-sm font-medium text-circular-dark-green hover:text-white border border-circular-dark-green hover:bg-circular-dark-green rounded-full transition duration-200">
-                    Solliciteren
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      {/* End Careers Section */}
 
       {/* Contact Section */}
 
