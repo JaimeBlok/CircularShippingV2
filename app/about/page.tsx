@@ -139,7 +139,8 @@ export default function About() {
                   <img
                     src={member.image}
                     alt={`${member.name} - ${member.role}`}
-                    className="object-contain transition duration-300 group-hover:scale-105 h-full w-full"
+                    className="object-cover object-[center_top] transition duration-300 group-hover:scale-105 h-full w-full"
+                    style={{ objectPosition: 'center top', height: '117.65%' }}
                   />
                 </div>
                 <div className="p-4 sm:p-5 space-y-2 sm:space-y-3 flex-1">
