@@ -9,19 +9,19 @@ export default function About() {
       name: 'Joost',
       role: 'Co-founder & CEO',
       description: 'Joost leidt de strategische visie van het bedrijf en bouwt partnerships met webshops en logistieke partners.',
-      image: '/images/joost2.jpg',
+      image: '/images/Joost.png',
     },
     {
       name: 'Boris',
       role: 'Co-founder & CTO',
       description: 'Als technisch specialist focust Boris zich op het ontwikkelen van innovatieve verpakkingsoplossingen.',
-      image: '/images/Boris.jpg',
+      image: '/images/Boris.png',
     },
     {
       name: 'Bart',
       role: 'Co-founder & COO',
       description: 'Bart zorgt voor de dagelijkse operaties en de implementatie van onze circulaire logistieke processen.',
-      image: '/images/Bart%20Kroese.jpg',
+      image: '/images/Bart.png',
     },
   ]
 
