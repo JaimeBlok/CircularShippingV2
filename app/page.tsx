@@ -77,7 +77,7 @@ export default function Home() {
           <div className="bg-gradient-to-br from-circular-dark-green to-circular-green rounded-2xl sm:rounded-3xl p-6 sm:p-8 md:p-10 text-white">
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6">
               <div className="text-center">
-                <div className="text-3xl sm:text-4xl font-medium mb-2">Tot 90%</div>
+                <div className="text-3xl sm:text-4xl font-medium mb-2">80%</div>
                 <div className="text-sm sm:text-base text-white/90">CO₂ besparing t.o.v. karton</div>
               </div>
               <div className="text-center">
