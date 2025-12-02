@@ -181,9 +181,23 @@ export default function Header() {
               >
                 Verpakking inleveren
               </a>
+              {isBusinessPage && (
+                <a
+                  href="/login"
+                  className="inline-flex items-center justify-center w-10 h-10 rounded-full border border-white/30 text-white hover:bg-white hover:text-circular-dark-green transition duration-200"
+                  aria-label="Inloggen"
+                >
+                  <svg className="w-5 h-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round">
+                    <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
+                    <circle cx="12" cy="7" r="4" />
+                  </svg>
+                </a>
+              )}
+            </div>
+            {isBusinessPage && (
               <a
                 href="/login"
-                className="inline-flex items-center justify-center w-10 h-10 rounded-full border border-white/30 text-white hover:bg-white hover:text-circular-dark-green transition duration-200"
+                className="inline-flex items-center justify-center w-9 h-9 rounded-full border border-white/30 text-white hover:bg-white hover:text-circular-dark-green transition duration-200 lg:hidden"
                 aria-label="Inloggen"
               >
                 <svg className="w-5 h-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round">
@@ -191,17 +205,7 @@ export default function Header() {
                   <circle cx="12" cy="7" r="4" />
                 </svg>
               </a>
-            </div>
-            <a
-              href="/login"
-              className="inline-flex items-center justify-center w-9 h-9 rounded-full border border-white/30 text-white hover:bg-white hover:text-circular-dark-green transition duration-200 lg:hidden"
-              aria-label="Inloggen"
-            >
-              <svg className="w-5 h-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round">
-                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
-                <circle cx="12" cy="7" r="4" />
-              </svg>
-            </a>
+            )}
 
             {/* Mobile menu button */}
             <div className="lg:hidden">
@@ -301,17 +305,19 @@ export default function Header() {
                   </a>
                 </div>
               </div>
-              <a
-                href="/login"
-                className="inline-flex items-center gap-2 text-white hover:text-circular-teal px-3 py-2 text-base font-medium transition-colors"
-                onClick={() => setMobileMenuOpen(false)}
-              >
-                <svg className="w-5 h-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round">
-                  <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
-                  <circle cx="12" cy="7" r="4" />
-                </svg>
-                Inloggen
-              </a>
+              {isBusinessPage && (
+                <a
+                  href="/login"
+                  className="inline-flex items-center gap-2 text-white hover:text-circular-teal px-3 py-2 text-base font-medium transition-colors"
+                  onClick={() => setMobileMenuOpen(false)}
+                >
+                  <svg className="w-5 h-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round">
+                    <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
+                    <circle cx="12" cy="7" r="4" />
+                  </svg>
+                  Inloggen
+                </a>
+              )}
               <div className="pt-3">
                 <a
                   href="/demo"
