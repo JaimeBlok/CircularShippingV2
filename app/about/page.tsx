@@ -142,6 +142,7 @@ export default function About() {
                     fill
                     sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                     className="object-contain transition duration-300 group-hover:scale-105"
+                    unoptimized
                   />
                 </div>
                 <div className="p-4 sm:p-5 space-y-2 sm:space-y-3 flex-1">
