@@ -123,20 +123,20 @@ export default function Business() {
                 </div>
 
                 {/* Pricing */}
-                <div className="mb-6 space-y-2.5 flex-1">
-                  <div className="flex items-center justify-between py-2.5 border-b border-gray-200">
+                <div className="mb-6 space-y-2.5 flex-1 flex flex-col">
+                  <div className="flex items-center justify-between py-2.5 border-b border-gray-200 min-h-[44px]">
                     <div className="text-sm text-gray-700">
                       <span className="font-medium">M</span> (50 x 30 x 12 cm)
                     </div>
                     <div className="text-base font-medium text-circular-dark-green">€1,69</div>
                   </div>
-                  <div className="flex items-center justify-between py-2.5 border-b border-gray-200">
+                  <div className="flex items-center justify-between py-2.5 border-b border-gray-200 min-h-[44px]">
                     <div className="text-sm text-gray-700">
                       <span className="font-medium">L</span> (60 x 35 x 15 cm)
                     </div>
                     <div className="text-base font-medium text-circular-dark-green">€1,79</div>
                   </div>
-                  <div className="flex items-center justify-between py-2.5">
+                  <div className="flex items-center justify-between py-2.5 min-h-[44px]">
                     <div className="text-sm text-gray-700">
                       <span className="font-medium">XL</span> (100 x 50 x 30 cm)
                     </div>
@@ -176,20 +176,20 @@ export default function Business() {
                 </div>
 
                 {/* Pricing */}
-                <div className="mb-6 space-y-2.5 flex-1">
-                  <div className="flex items-center justify-between py-2.5 border-b border-gray-200">
+                <div className="mb-6 space-y-2.5 flex-1 flex flex-col">
+                  <div className="flex items-center justify-between py-2.5 border-b border-gray-200 min-h-[44px]">
                     <div className="text-sm text-gray-700">
                       <span className="font-medium">M</span> (20 x 10 x 10 cm)
                     </div>
                     <div className="text-base font-medium text-circular-dark-green">€2,29</div>
                   </div>
-                  <div className="flex items-center justify-between py-2.5 border-b border-gray-200">
+                  <div className="flex items-center justify-between py-2.5 border-b border-gray-200 min-h-[44px]">
                     <div className="text-sm text-gray-700">
                       <span className="font-medium">L</span> (30 x 20 x 11 cm)
                     </div>
                     <div className="text-base font-medium text-circular-dark-green">€2,49</div>
                   </div>
-                  <div className="flex items-center justify-between py-2.5">
+                  <div className="flex items-center justify-between py-2.5 min-h-[44px]">
                     <div className="text-sm text-gray-700">
                       <span className="font-medium">XL</span> (60 x 40 x 40 cm)
                     </div>
